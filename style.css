@@ -1,0 +1,244 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background: radial-gradient(circle, rgb(28, 36, 42) 20%, rgba(0,0,0,1) 70%);
+
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.row1 .header{
+    font-size: 300%;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.row2 button{
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: 230ms all;
+}
+.row2 button:hover{
+    background-color: rgb(20, 78, 122);
+    color: white;
+    cursor: pointer;
+}
+.row2 input{
+    background-color:rgba(255, 255, 255, 0.269);
+    padding: 4px 10px;
+    border: none;
+    width: 360%;
+    height: 30px;
+    border-radius: 5px;
+    float: left;
+    transition: 200ms all;
+    touch-action: manipulation;
+}
+.row2 input:focus{
+    transition: 200ms all;
+    outline-style: none;
+    background-color: white;
+}
+.row2 input::placeholder{
+    color: white;
+}
+.row2 input:focus::placeholder{
+    color: black;
+}
+.row3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 200px;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.row3 .col1 {
+    float: left;
+    display: table;
+    text-align: center;
+  }
+  .row3 .col2 {
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+  }
+
+.row3 li{
+    align-items: center;
+    font-size: 100%;
+    padding: 1px;
+    margin-top: 10px;
+}
+.row3 .col1 ul,
+.row3 .col2 ul{
+    width: 150%;
+    text-align: start;
+    margin: 10px;
+    font-size: 80%;
+    font-weight: 100;
+}
+.row3 hr{
+    margin-top: 7px;
+}
+.row3 #btnTamamla{
+    margin-top: 10px;
+    padding: 1px;
+    width: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.row3 #btnSil{
+    margin-top: 10px;   
+    width: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        font-size: 120%;
+    }
+    .container{
+        margin-top: 10%;
+    }
+    .row2 button{
+        background-color: white;
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .row2 input{
+        padding: 4px 10px;
+        width: 280%;
+        height: 30px;
+    }
+    .row3{
+        gap: 150px;
+        padding: 20px 20px;
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 100%;
+    }
+    .container{
+        margin-top: 10%;
+    }
+    .row2 button{
+        background-color: white;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .row2 input{
+        padding: 4px 10px;
+        width: 220%;
+        height: 30px;
+    }
+    .row3{
+        gap: 100px;
+        padding: 20px 20px;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 668px){
+    body{
+        font-size: 100%;
+    }
+    .container{
+        margin-top: 20%;
+    }
+    .row2 button{
+        background-color: white;
+        padding: 15px 15px;
+        font-size: 13px;
+        color: black;
+    }
+    .row2 input{
+        padding: 10px 10px;
+        width: 130%;
+        height: 28px;
+    }
+    .row3{
+        align-items: start;
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        font-size: 150%;
+        padding: 20px 50px;
+        gap: 50px;
+    }
+    .row3 .col1 ul,
+    .row3 .col2 ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        font-size: 85%;
+    }
+    .row3 .col2 {
+        margin-left: 0px;
+      }
+      .row3 li{
+        text-align: start;
+        align-items: center;
+        font-size: 100%;
+        padding: 1px;
+        margin-top: 5px;
+    }
+    .row3 #btnTamamla{
+        margin-top: 5px;
+        padding: 1px;
+        width: 17px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .row3 #btnSil{
+        margin-top: 5px;   
+        width: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+}
